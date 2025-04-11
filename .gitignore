@@ -197,11 +197,15 @@ __init__.py
 
 !q_nd_a_app/.env
 
-# virtualenv
-.venv
-venv/
-ENV/
+
+
 
 # Ignore frontend/node_modules but not the frontend folder itself
 /frontend/node_modules/
 !/frontend/
+!.env
+
+# Ignore env folders (still okay)
+.venv/
+venv/
+ENV/
