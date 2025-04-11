@@ -161,7 +161,7 @@ celerybeat-schedule.bak
 celerybeat-schedule.dat
 celerybeat-schedule.dir
 # dotenv
-.env
+.env/
 ./.env
 # virtualenv
 .venv
