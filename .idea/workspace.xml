@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="370f027d-b999-4a40-a70e-4bec25142332" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_nd_a_app/accounts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_nd_a_app/accounts/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_nd_a_app/accounts/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_nd_a_app/q_nd_a_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_nd_a_app/query/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_nd_a_app/query/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_nd_a_app/query/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_nd_a_app/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/q_nd_a_app/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
