@@ -1,67 +1,32 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import axios from "axios";
 
-const QuestionForm = () => {
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
-  const [error, setError] = useState('');
-  const navigate = useNavigate();
+const QuestionForm = ({ setQuestions }) => {
+  const [title, setTitle] = useState("");
+  const [body, setBody] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError('');
-
+    const token = localStorage.getItem("token");
     try {
-      const response = await axios.post('/query/questions/', {
-        title,
-        description,
+      const response = await axios.post("http://localhost:8000/query/questions/", { title, body }, {
+        headers: { Authorization: `Bearer ${token}` },
       });
-
-      console.log('Question submitted:', response.data);
-      navigate('/'); // Redirect to QuestionList
-    } catch (err) {
-      console.error(err);
-      setError('Failed to submit question. Please try again.');
+      setQuestions((prev) => [response.data.data, ...prev]);
+      setTitle("");
+      setBody("");
+    } catch (error) {
+      alert("Failed to post question");
     }
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6">
-      <h2 className="text-2xl font-bold mb-4">Ask a New Question</h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <label className="block font-medium">Title</label>
-          <input
-            type="text"
-            className="w-full border rounded p-2"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            required
-          />
-        </div>
-
-        <div>
-          <label className="block font-medium">Description</label>
-          <textarea
-            className="w-full border rounded p-2"
-            value={body}
-            onChange={(e) => setDescription(e.target.value)}
-            required
-            rows={5}
-          />
-        </div>
-
-        {error && <p className="text-red-600">{error}</p>}
-
-        <button
-          type="submit"
-          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-        >
-          Submit
-        </button>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit} className="bg-white p-4 shadow-md rounded-xl space-y-4">
+      <h3 className="text-xl font-semibold">Ask a Question</h3>
+      <input type="text" placeholder="Title" className="border w-full p-2 rounded-md" value={title} onChange={(e) => setTitle(e.target.value)} required />
+      <textarea placeholder="Body" className="border w-full p-2 rounded-md" value={body} onChange={(e) => setBody(e.target.value)} required />
+      <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Submit</button>
+    </form>
   );
 };
 

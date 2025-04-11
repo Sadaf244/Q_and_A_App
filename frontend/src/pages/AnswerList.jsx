@@ -1,35 +1,35 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import axios from "axios";
+import AnswerForm from "./AnswerForm";
 
-const AnswerList = () => {
-  const { id } = useParams();
+const AnswerList = ({ questionId }) => {
   const [answers, setAnswers] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/query/questions/${id}/answers/`)
-      .then(response => {
-        if (response.data.status) {
-          setAnswers(response.data.data.answers);
-        }
-      })
-      .catch(error => console.error("Error fetching answers:", error));
-  }, [id]);
+    const fetchAnswers = async () => {
+      const token = localStorage.getItem("token");
+      try {
+        const res = await axios.get(`http://localhost:8000/query/questions/${questionId}/answers/`, {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        setAnswers(res.data.data);
+      } catch (error) {
+        console.error("Error fetching answers");
+      }
+    };
+    fetchAnswers();
+  }, [questionId]);
 
   return (
-    <div className="p-4">
-      <h2 className="text-xl font-bold mb-4">Answers</h2>
-      {answers.length === 0 ? (
-        <p>No answers yet.</p>
-      ) : (
-        answers.map(ans => (
-          <div key={ans.id} className="mb-4 border p-3 rounded shadow">
-            <p>{ans.text}</p>
-            <p className="text-sm text-gray-500">By {ans.user}</p>
-            <p>Likes: {ans.like_count}</p>
-          </div>
-        ))
-      )}
+    <div className="mt-4 space-y-2">
+      <h4 className="font-semibold">Answers</h4>
+      {answers.map((ans) => (
+        <div key={ans.id} className="bg-gray-100 p-2 rounded-md">
+          <p>{ans.text}</p>
+          <p className="text-xs text-gray-500">By: {ans.author__email}</p>
+        </div>
+      ))}
+      <AnswerForm questionId={questionId} setAnswers={setAnswers} />
     </div>
   );
 };
