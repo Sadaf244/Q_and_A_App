@@ -5,42 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="370f027d-b999-4a40-a70e-4bec25142332" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/accounts/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/accounts/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/accounts/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/accounts/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/accounts/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/q_nd_a_app/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/q_nd_a_app/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/q_nd_a_app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/q_nd_a_app/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/query/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/query/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/query/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/query/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_nd_a_app/query/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/LikeButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LikeButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/context/AuthProvider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/context/AuthProvider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/AnswerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/AnswerForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/AnswerList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/AnswerList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/AuthLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/AuthLayout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/MainLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/MainLayout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/QuestionForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/QuestionForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/QuestionList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/QuestionList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Signup.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/utils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/utils/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_nd_a_app/accounts/authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_nd_a_app/accounts/authentication.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_nd_a_app/accounts/backends.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_nd_a_app/accounts/backends.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_nd_a_app/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_nd_a_app/accounts/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_nd_a_app/query/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_nd_a_app/query/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_nd_a_app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/q_nd_a_app/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +36,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sadaf\PycharmProjects\Q_nd_A_app\q_nd_a_app" />
       <recent name="C:\Users\sadaf\PycharmProjects\Q_nd_A_app\frontend\src\components" />
       <recent name="C:\Users\sadaf\PycharmProjects\Q_nd_A_app\frontend\src\pages" />
     </key>
