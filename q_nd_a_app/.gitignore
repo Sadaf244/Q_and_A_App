@@ -1,4 +1,4 @@
-assets
+../frontend/src/assets
 # Created by https://www.gitignore.io/api/pycharm,django,python,macos,linux,jetbrains
 ### Django ###
 *.log
@@ -161,8 +161,8 @@ celerybeat-schedule.bak
 celerybeat-schedule.dat
 celerybeat-schedule.dir
 # dotenv
-.env/
-./.env
+q_nd_a_app/.env/
+q_nd_a_app/.env
 # virtualenv
 .venv
 venv/
@@ -195,7 +195,7 @@ frontend/
 migrate.sh
 __init__.py
 
-!.env
+!q_nd_a_app/.env
 
 # virtualenv
 .venv
